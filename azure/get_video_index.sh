@@ -1,0 +1,5 @@
+#!/bin/bash
+
+key="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJBY2NvdW50SWQiOiIxYTMxNzc4Ni1hOGNkLTQ2OWItOTA3OS0zZDVhNmQ4MmM3NDQiLCJBbGxvd0VkaXQiOiJGYWxzZSIsIkV4dGVybmFsVXNlcklkIjoiQUQzQjNDNDE4RjdDNEM1REIwNEUyOTRERDhEMDg2QTgiLCJVc2VyVHlwZSI6Ik1pY3Jvc29mdENvcnBBYWQiLCJpc3MiOiJodHRwczovL3d3dy52aWRlb2luZGV4ZXIuYWkvIiwiYXVkIjoiaHR0cHM6Ly93d3cudmlkZW9pbmRleGVyLmFpLyIsImV4cCI6MTU2NjQ4OTg2NiwibmJmIjoxNTY2NDg1OTY2fQ.4Sj3JB4aoTmRii_oz6jWaXuKoMjsDAIDCmpgsPcJU5U"
+
+curl -v -X  GET "https://api.videoindexer.ai/trial/Accounts/1a317786-a8cd-469b-9079-3d5a6d82c744/Videos/e8f2745acd/Index?reTranslate=False&includeStreamingUrls=True&accessTokeb=$key | jq '.'
